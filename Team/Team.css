@@ -1,29 +1,82 @@
+@import url('../1-home.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
+}
+.navigation-main-class{
+  overflow: auto;
+}
+#our-team-vertical-line-flex-class
+{
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.4em;
+}
+#horizontal-line-out-team
+{
+  overflow: auto;
+}
+#oodles-team-header-hr-line{
+
+  border: solid #080829 1px ;
+  border-radius: 50px;
+  width: 5vw;
+  margin-right: 1em;
+}
+#our-team-oodels-top-header-class
+{
+  overflow: auto;
+}
+#our-team-oodels-top-header-class h5{
+  font-size: 1.6em;
+}
+.team-header-main-class
+{
+  overflow: auto;
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  padding-bottom: 4rem;
+}
+#meet-our-expeert-team-heading-style-class h3{
+  font-size: 3em;
+  font-weight: bold;
+}
+#meet-our-expeert-team-heading-style-class h4
+{
+  font-weight: 100;
+  font-size: 1.6em;
+}
+#main-container-for-team-bx-mn-class
+{
+  overflow: auto;
+  padding-bottom: 5em;
+}
 .team-main-container {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 .team-main-container .card-main-class {
   position: relative;
-  width: 300px;
-  height: 400px;
-  margin: 20px;
+  width: 420px;
+  height: 500px;
+  margin: 10px;
   overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+}
+.team-image-main-class img
+{
+  height: 500px;
+  width: 420px;
 }
 .team-main-container .card-main-class .content-team-box-main-class {
   position: absolute;
@@ -58,7 +111,7 @@
   transition: 0.5s;
   transition-delay: 0.6s;
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-60px);
 }
 .team-main-container .card-main-class:hover .content-team-box-main-class .contentBox-for-the-user-name h3 {
   opacity: 1;
@@ -73,14 +126,17 @@
   position: relative;
   bottom: 10px;
   display: flex;
+  left: -20px;
+  /* border: 1px solid red; */
 }
 .team-main-container .card-main-class .content-team-box-main-class .socila-media-icons-main-class li {
   list-style: none;
   margin: 0 10px;
-  transform: translateY(40px);
+  transform: translateY(100px);
   transition: 0.5s;
   opacity: 0;
   transition-delay: calc(0.2s);
+
 }
 
 .team-main-container .card-main-class:hover .content-team-box-main-class .socila-media-icons-main-class li {
@@ -90,4 +146,81 @@
 .team-main-container .card-main-class .content-team-box-main-class .socila-media-icons-main-class li a {
   color: white;
   font-size: 24px;
+}
+.team-image-main-class
+{
+  overflow: auto;
+}
+
+#team-oodles-crd-flx-clss
+{
+  overflow: auto;
+  
+}
+#text-left-to-th-card-bxsx
+{
+  overflow: auto;
+  padding-top: 4em;
+}
+#tem-bx-head-clss h4
+{
+  font-size: 2.5em;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+}
+#tem-hdr-txt-btm-biodata-mn-class
+{
+  overflow: auto;
+  margin-top: 1.5em;
+}
+#tem-hdr-txt-btm-biodata-mn-class h5
+{
+  width: 45vw;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 150%;
+}
+#signaturebox-team-main-cls
+{
+  overflow: auto;
+  position: relative;
+  margin-top: 6em;
+  height: 10em;
+}
+.sigantutre-style-class{
+  overflow: auto;
+  position: absolute;
+  left: 20px;
+  transition: .3s;
+}
+#signaturebox-team-main-cls:hover .sigantutre-style-class{
+  left:0px
+}
+
+#main-header-name-sig-class{
+  overflow: auto;
+  position: absolute;
+  top: 45px;
+  font-family: 'Roboto Condensed';
+  
+}
+#main-header-name-sig-class h5
+{
+  font-size: 2.1em;
+}
+#main-header-team-btm-para-sig-cls{
+  overflow: auto;
+  position: absolute;
+  top: 90px;
+  font-family: 'Roboto Condensed';
+
+}
+#main-header-team-btm-para-sig-cls h5{
+  font-size: 1.1em;
+  color: #737373;
+}
+.SCD-TEAM-container{
+  overflow: auto;
+  display: flex;
+  flex-direction: row-reverse;
 }
