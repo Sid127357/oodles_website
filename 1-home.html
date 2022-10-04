@@ -42,10 +42,11 @@
 
                         <div class="navigation-bar-floating-mainclass">
                             <div class="navbar-list-items-oodles">
+                                <div class="topnav" id="myTopnav">
                                 <a href="./1-home.html" id="home-button-top-navigation-bar"
                                     class="navigation-menue-hiding-class">Home</a>
-                                <a href="#news" class="navigation-menue-hiding-class">About</a>
-                                <div class="dropdown-list-main-class navigation-menue-hiding-class">
+                                <!-- <a href="#news" class="navigation-menue-hiding-class">About</a> -->
+                                <!-- <div class="dropdown-list-main-class navigation-menue-hiding-class">
                                     <button class="dropbtn">Features
                                         <img src="down-filled-triangular-arrow.png" alt="drop_down_arrow" height="12px"
                                             class="navigation-bar-dropdown-arrow-class">
@@ -59,10 +60,10 @@
                                         <a href="#">FAQ</a>
                                         <a href="#">FAQ</a>
                                     </div>
-                                </div>
+                                </div> -->
                                 <a href="./Team/Team.html" class="navigation-menue-hiding-class">Team</a>
 
-                                <div class="dropdown-list-main-class navigation-menue-hiding-class">
+                                <!-- <div class="dropdown-list-main-class navigation-menue-hiding-class">
                                     <button class="dropbtn">Blog
                                         <img src="down-filled-triangular-arrow.png" alt="drop_down_arrow" height="12px"
                                             class="navigation-bar-dropdown-arrow-class">
@@ -73,10 +74,12 @@
                                         <a href="#">Gallery</a>
                                     </div>
                                 </div>
-                                <a href="contactus/contactus.html" class="navigation-menue-hiding-class">Contact</a>
-                             
-                                    <a href="#" class="oodle-header-navigation-bar-getstarted-button orange">GET
-                                        STARTED</a>
+                                <a href="contactus/contactus.html" class="navigation-menue-hiding-class">Contact</a> -->
+                                <a href="javascript:void(0);" class="icon " onclick="myFunction()">
+                                    <i class="fa fa-bars"></i>
+                                  </a>
+                                  </div>
+                                    <a href="#" class="oodle-header-navigation-bar-getstarted-button orange">Get Started</a>
 
                             </div>
                         </div>
@@ -379,6 +382,16 @@
         };
 
 
+
+
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 
 
