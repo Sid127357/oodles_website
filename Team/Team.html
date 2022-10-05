@@ -19,65 +19,59 @@
   <div class="container-md">
     <div class="navigation-main-class">
       <nav class="navigation-bar">
-        <div id="navigation-bar-list-content">
-
-          <!-- NAMVIGATION BAR 1ST FLOATING CLASS -->
-
-          <div class="navigation-bar-floating-mainclass">
-            <img id="navigationbar-main-oodles-brand-logo" src="../oodles_brand_logo.png" alt="oodles-brand-logo"
-              height="40%">
-          </div>
-
-
-
-          <!-- navigation bar 2nd floating class -->
-
-
-
-          <div class="navigation-bar-floating-mainclass">
-            <div class="navbar-list-items-oodles">
-              <a href="../1-home.html" id="home-button-top-navigation-bar"
-                class="navigation-menue-hiding-class">Home</a>
-              <a href="#news" class="navigation-menue-hiding-class">About</a>
-              <div class="dropdown-list-main-class navigation-menue-hiding-class">
-                <button class="dropbtn">Features
-                  <img src="../down-filled-triangular-arrow.png" alt="drop_down_arrow" height="12px"
-                    class="navigation-bar-dropdown-arrow-class">
-
-                </button>
-                <div class="dropdown-content">
-
-                  <a href="./Team.html">Team</a>
-                  <a href="#">Pricing</a>
-                  <a href="#">FAQ</a>
-                  <a href="#">FAQ</a>
-                  <a href="#">FAQ</a>
-                </div>
-              </div>
-              <a href="./Team.html" class="navigation-menue-hiding-class">Team</a>
-
-              <div class="dropdown-list-main-class navigation-menue-hiding-class">
-                <button class="dropbtn">Blog
-                  <img src="../down-filled-triangular-arrow.png" alt="drop_down_arrow" height="12px"
-                    class="navigation-bar-dropdown-arrow-class">
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">Blog</a>
-
-                  <a href="#">Gallery</a>
-                </div>
-              </div>
-              <a href="contactus/contactus.html" class="navigation-menue-hiding-class">Contact</a>
-
-              <a href="#" class="oodle-header-navigation-bar-getstarted-button orange">GET
-                STARTED</a>
-
+        <div class="main-class-navigation-flx-clss">
+            <div id="oodles-brand-logo-header-main-cls">
+              <img src="../oodles_brand_logo.png" alt="ooodles/brand/logo" width="30%">
             </div>
-          </div>
-
-
-        </div>
-      </nav>
+              <div class="container-nav-items-main">
+                <div class="mobile-nav">
+                  <button class="mobile-btn" onclick="toggleMenu(1)">Menu</button>
+                </div>
+                <ul class="nav" id="main-nav">
+                  <li class="close-item">
+                    <button class="mobile-btn" onclick="toggleMenu(0)">Close &times;</button>
+                  </li>
+                  <li class="navigation-bar-items">
+                    <a href="../1-home.html " class="nav-link-items">Home</a>
+                  </li>
+                  <!-- <li class="navigation-bar-items">
+                    <a href="#!" class="nav-link">
+                      Courses <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropDown-menu level-1">
+                      <li class="dropDown-item">
+                        <a href="#!" class="dropDown-link">
+                          Physics
+                        </a>
+                        
+                      </li>
+                      <li class="dropDown-item">
+                        <a href="#!" class="dropDown-link">
+                          Chemistry 
+                        </a>
+                        
+                      </li>
+                      <li class="dropDown-item">
+                        <a href="#!" class="dropDown-link">Maths</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <li class="navigation-bar-items">
+                    <a href="./Team/Team.html" class="nav-link-items">Team</a>
+                  </li>
+                  <!-- <li class="navigation-bar-items">
+                    <a href="#!" class="nav-link">About</a>
+                  </li>
+                  <li class="navigation-bar-items">
+                    <a href="#!" class="nav-link">Contact</a>
+                  </li> -->
+                  <div id="get-started-button-main-class">
+                  <a href="#" class="btn-get-start black">Get Started</a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+    </nav>
     </div>
   </div>
 
@@ -95,7 +89,7 @@
 
 
   <!-- -----------------------    FIRST TEAM CONTAINEER MAAIN CLASS       --------------------------------------- -->
-
+  <div id="team-main-cards-flex-class">
   <div id="main-container-for-team-bx-mn-class">
 
     <div class="team-main-container">
@@ -123,7 +117,7 @@
           </div>
         </div>
       </div>
-      <div id="text-left-to-th-card-bxsx">
+      <!-- <div id="text-left-to-th-card-bxsx">
         <div id="tem-bx-head-clss">
           <h4>Sourabh Agrawal</h4>
         </div>
@@ -144,7 +138,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -185,7 +179,7 @@
 
 
 
-      <div id="text-left-to-th-card-bxsx">
+      <!-- <div id="text-left-to-th-card-bxsx">
         <div id="tem-bx-head-clss">
           <h4>Dr. Vipul Gupta</h4>
         </div>
@@ -204,7 +198,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -247,7 +241,7 @@
       <!-- ------------------------  TEXT MAIN CLASSS   -------------------------------------- -->
 
 
-
+<!-- 
       <div id="text-left-to-th-card-bxsx">
         <div id="tem-bx-head-clss">
           <h4>Shikha Mohanty</h4>
@@ -267,13 +261,24 @@
           </div>
         </div>
 
-      </div>
-
+      </div> -->
+    </div>
 
 
    
     </div>
   </div>
+  <script>
+          function toggleMenu(id) {
+  console.log(id);
+  let nav = document.getElementById("main-nav");
+  if (id === 1) {
+    nav.style.left = "0%";
+  } else {
+    nav.style.left = "-100%";
+  }
+}
+  </script>
 </body>
 
 </html>

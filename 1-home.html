@@ -25,67 +25,58 @@
         <header id="main-background-image-him-cross">
             <div class="container-md">
                 <nav class="navigation-bar">
-                    <div id="navigation-bar-list-content">
-
-                        <!-- NAMVIGATION BAR 1ST FLOATING CLASS -->
-
-                        <div class="navigation-bar-floating-mainclass">
-                            <img id="navigationbar-main-oodles-brand-logo" src="oodles_brand_logo.png"
-                                alt="oodles-brand-logo" height="40%">
+                    <div class="main-class-navigation-flx-clss">
+                        <div id="oodles-brand-logo-header-main-cls">
+                          <img src="./oodles_brand_logo.png" alt="ooodles/brand/logo" width="30%">
                         </div>
-
-
-
-                        <!-- navigation bar 2nd floating class -->
-
-
-
-                        <div class="navigation-bar-floating-mainclass">
-                            <div class="navbar-list-items-oodles">
-                                <div class="topnav" id="myTopnav">
-                                <a href="./1-home.html" id="home-button-top-navigation-bar"
-                                    class="navigation-menue-hiding-class">Home</a>
-                                <!-- <a href="#news" class="navigation-menue-hiding-class">About</a> -->
-                                <!-- <div class="dropdown-list-main-class navigation-menue-hiding-class">
-                                    <button class="dropbtn">Features
-                                        <img src="down-filled-triangular-arrow.png" alt="drop_down_arrow" height="12px"
-                                            class="navigation-bar-dropdown-arrow-class">
-
-                                    </button>
-                                    <div class="dropdown-content">
-
-                                        <a href="./Team/Team.html">Team</a>
-                                        <a href="#">Pricing</a>
-                                        <a href="#">FAQ</a>
-                                        <a href="#">FAQ</a>
-                                        <a href="#">FAQ</a>
-                                    </div>
-                                </div> -->
-                                <a href="./Team/Team.html" class="navigation-menue-hiding-class">Team</a>
-
-                                <!-- <div class="dropdown-list-main-class navigation-menue-hiding-class">
-                                    <button class="dropbtn">Blog
-                                        <img src="down-filled-triangular-arrow.png" alt="drop_down_arrow" height="12px"
-                                            class="navigation-bar-dropdown-arrow-class">
-                                    </button>
-                                    <div class="dropdown-content">
-                                        <a href="#">Blog</a>
-
-                                        <a href="#">Gallery</a>
-                                    </div>
-                                </div>
-                                <a href="contactus/contactus.html" class="navigation-menue-hiding-class">Contact</a> -->
-                                <a href="javascript:void(0);" class="icon " onclick="myFunction()">
-                                    <i class="fa fa-bars"></i>
-                                  </a>
-                                  </div>
-                                    <a href="#" class="oodle-header-navigation-bar-getstarted-button orange">Get Started</a>
-
+                          <div class="container-nav-items-main">
+                            <div class="mobile-nav">
+                              <button class="mobile-btn" onclick="toggleMenu(1)">Menu</button>
                             </div>
+                            <ul class="nav" id="main-nav">
+                              <li class="close-item">
+                                <button class="mobile-btn" onclick="toggleMenu(0)">Close &times;</button>
+                              </li>
+                              <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">Home</a>
+                              </li>
+                              <!-- <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">
+                                  Courses <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="dropDown-menu level-1">
+                                  <li class="dropDown-item">
+                                    <a href="#!" class="dropDown-link">
+                                      Physics
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="dropDown-item">
+                                    <a href="#!" class="dropDown-link">
+                                      Chemistry 
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="dropDown-item">
+                                    <a href="#!" class="dropDown-link">Maths</a>
+                                  </li>
+                                </ul>
+                              </li> -->
+                              <li class="navigation-bar-items">
+                                <a href="./Team/Team.html" class="nav-link">Team</a>
+                              </li>
+                              <!-- <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">About</a>
+                              </li>
+                              <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">Contact</a>
+                              </li> -->
+                              <div id="get-started-button-main-class">
+                              <a href="#" class="btn-get-start black">Get Started</a>
+                              </div>
+                            </ul>
+                          </div>
                         </div>
-
-
-                    </div>
                 </nav>
                 <div id="main-gllry-flex-class">
                     <div class="text-appear-on-the-image-main-header-class">
@@ -116,7 +107,7 @@
     <!-- --------------------------   HEADER-BOTTOM-BRAND-SLIDER-MAIN-CLASS  ------------------------------ -->
 
 
-    <div id="header-bottom-brand-logo-slider-main-class">
+    <!-- <div id="header-bottom-brand-logo-slider-main-class">
         <div class="slider-header-bottom-heading-class">
             <p>We are working with <span class="header-bottom-slider-span-class">leading brands</span></p>
         </div>
@@ -157,7 +148,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -204,14 +195,14 @@
 
     <!-- BLOG SECTIONN BLOG SECTION BLOG SECTION  BLOG SECTION -->
 
-    <div id="blog-section-main-class">
+    <!-- <div id="blog-section-main-class">
         <p class="blog-page-header-class">From our blog</p>
         <div id="blogs-cards-flex-class">
 
-            <!--    --------      FIRST BLOG BOX  ---------------- -->
+                --------      FIRST BLOG BOX  ---------------- -->
 
 
-            <div class="cards-three-main-classes">
+          <!--  <div class="cards-three-main-classes">
                 <a href="#">
                     <div class="blog-cards-image-class">
                         <img src="blog-1st-image.png" alt="oodles-blog" />
@@ -226,11 +217,11 @@
                             quibusdam blanditiis fugiat quas!</p>
                     </div>
                 </a>
-            </div>
+            </div>  ->
 
             <!-- -----------------   SECOND BLOG BOX   ------------------- -->
 
-            <div class="cards-three-main-classes">
+          <!--  <div class="cards-three-main-classes">
                 <a href="#">
                     <div class="blog-cards-image-class">
                         <img src="blog-table.png" alt="oodles-blog" />
@@ -244,11 +235,10 @@
                             adipisci quibusdam blanditiis fugiat quas!</p>
                     </div>
                 </a>
-            </div>
-
+            </div>  ----->
             <!-- -------------------   THIRD BLOG BOX TABLE     --------------------- -->
 
-            <div class="cards-three-main-classes">
+         <!----   <div class="cards-three-main-classes">
 
                 <a href="">
                     <div class="blog-cards-image-class">
@@ -266,9 +256,9 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-------------------------------------- TESTINOMIAL SECTION --------------- -->
+    <!-- ------------------------------------ TESTINOMIAL SECTION ---------------
     <div class="testinomial-heading-class">
         <p id="testinomial-heading">TESTIM<span class="testinomial-span-class">ONIALS</span></p>
 
@@ -282,17 +272,16 @@
                 <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
                 <ul id="testim-dots" class="dots">
                     <li class="dot active"></li>
-                    <!--
-                          -->
+                    
+                          
                     <li class="dot"></li>
-                    <!--
-                          -->
+                  
+
                     <li class="dot"></li>
-                    <!--
-                          -->
+                    
+
                     <li class="dot"></li>
-                    <!--
-                          -->
+                    
                     <li class="dot"></li>
                 </ul>
                 <div id="testim-content" class="cont">
@@ -340,26 +329,10 @@
                 </div>
 
             </div>
-            <!--         </div> -->
-        </section>
-    </div>
+                    </div> 
+         </section>
+    </div>  -->
 
-    <!-- -------------------------BOXES AT THE BOTTOM OG THE HEADER------------------- -->
-
-    <div id="oodles-header-bottom-boxes-main-class">
-        <div class="cards-gallary-main-class" id="styling-class-gallary-1">
-
-        </div>
-        <div class="cards-gallary-main-class" id="styling-class-gallary-2">
-
-        </div>
-        <div class="cards-gallary-main-class" id="styling-class-gallary-3">
-
-        </div>
-        <div class="cards-gallary-main-class" id="styling-class-gallary-4">
-
-        </div>
-    </div>
 
 
 
@@ -384,12 +357,13 @@
 
 
 
-        function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+        function toggleMenu(id) {
+  console.log(id);
+  let nav = document.getElementById("main-nav");
+  if (id === 1) {
+    nav.style.left = "0%";
   } else {
-    x.className = "topnav";
+    nav.style.left = "-100%";
   }
 }
 

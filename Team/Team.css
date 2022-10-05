@@ -66,8 +66,8 @@
 }
 .team-main-container .card-main-class {
   position: relative;
-  width: 420px;
-  height: 500px;
+  width: calc(90% + .1vw);
+  height: calc(90% - 2vh);
   margin: 10px;
   overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
@@ -76,8 +76,8 @@
 }
 .team-image-main-class img
 {
-  height: 500px;
-  width: 420px;
+  height: 400px;
+  width: 100%;
 }
 .team-main-container .card-main-class .content-team-box-main-class {
   position: absolute;
@@ -220,8 +220,144 @@
   font-size: 1.1em;
   color: #737373;
 }
-.SCD-TEAM-container{
+/* .SCD-TEAM-container{
   overflow: auto;
   display: flex;
   flex-direction: row-reverse;
+} */
+#team-main-cards-flex-class{
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+
+.mobile-nav,
+.close-item {
+  display: none;
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  /* background-color: #333; */
+}
+.nav .fa {
+  margin-left: 5px;
+}
+
+.nav-link-items,
+.dropDown-link {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 14px 18px;
+  transition: 0.25s;
+  font-size: 1.2em;
+}
+.navigation-bar-items:hover .nav-link-items{
+  color: purple;
+}
+
+/* Dropdown Menu */
+.dropDown-menu {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  /* border-left: 3px solid #000; */
+  z-index: 2;
+  /* border: 1px solid red; */
+  box-shadow: 0px 1px 10px 0px #80808062;
+}
+.dropDown-item{
+  position: relative;
+}
+.dropDown-item:hover,
+.dropDown-item:hover > .dropDown-link {
+  background-color: purple;
+  color: white;
+}
+
+.level-1 {
+  display: none;
+  background-color: #fff;
+  width: 150px;
+}
+
+.navigation-bar-items:hover > .level-1 {
+  display: block;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .mobile-nav {
+    display: block;
+    text-align: right;
+    padding: 10px 15px;
+    /* background-color: #333; */
+  }
+  .mobile-btn {
+    color: #eee;
+    background-color: #666;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.25s;
+  }
+  .mobile-btn:hover {
+    cursor: pointer;
+    background-color: #555;
+  }
+
+  .nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    top: 0;
+    transition: 0.25s;
+    background-color: #333;
+    color: #fff;
+  }
+  .navigation-bar-items{
+  background-color: #333;
+
+  }
+  .nav-link-items{
+      color: #fff;
+  }
+  #main-nav {
+    left: -100%;
+  }
+  li.close-item {
+    display: block;
+    padding: 20px 18px;
+    text-align: right;
+  }
+  .dropDown-menu {
+    width: 100%;
+    position: static;
+    border: none;
+  }
+  .level-1 > .dropDown-item > .dropDown-link {
+    padding-left: 28px;
+    background-color: #444;
+
+  }
+
+  .dropDown-menu a:hover{
+    color: #ccc;
+  }
+  .fa-caret-right {
+    transform: rotate(90deg);
+  }
+}
+@media screen and (max-width:1100px){
+  #team-main-cards-flex-class{
+    flex-wrap: wrap;
+  }
 }
