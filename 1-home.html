@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oodles.ai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="1-home.css">
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+
+    <div id="main-header-him-cross-class">
+        <header id="main-background-image-him-cross">
+            <div class="container-md">
+                <nav class="navigation-bar">
+                    <div class="main-class-navigation-flx-clss">
+                        <div id="oodles-brand-logo-header-main-cls">
+                          <img src="./oodles_brand_logo.png" alt="ooodles/brand/logo" width="30%">
+                        </div>
+                          <div class="container-nav-items-main">
+                            <div class="mobile-nav">
+                              <button class="mobile-btn" onclick="toggleMenu(1)">Menu</button>
+                            </div>
+                            <ul class="nav" id="main-nav">
+                              <li class="close-item">
+                                <button class="mobile-btn" onclick="toggleMenu(0)">Close &times;</button>
+                              </li>
+                              <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">Home</a>
+                              </li>
+                              <!-- <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">
+                                  Courses <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul class="dropDown-menu level-1">
+                                  <li class="dropDown-item">
+                                    <a href="#!" class="dropDown-link">
+                                      Physics
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="dropDown-item">
+                                    <a href="#!" class="dropDown-link">
+                                      Chemistry 
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="dropDown-item">
+                                    <a href="#!" class="dropDown-link">Maths</a>
+                                  </li>
+                                </ul>
+                              </li> -->
+                              <li class="navigation-bar-items">
+                                <a href="./Team/Team.html" class="nav-link">Team</a>
+                              </li>
+                              <!-- <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">About</a>
+                              </li>
+                              <li class="navigation-bar-items">
+                                <a href="#!" class="nav-link">Contact</a>
+                              </li> -->
+                              <div id="get-started-button-main-class">
+                              <a href="#" class="btn-get-start black">Get Started</a>
+                              </div>
+                            </ul>
+                          </div>
+                        </div>
+                </nav>
+                <div id="main-gllry-flex-class">
+                    <div class="text-appear-on-the-image-main-header-class">
+                        <div id="heading-text-on-header-backgorund-image-main-class">
+                            <p>LATEST ARTIFICIAL INTELLIGENCE</p>
+                        </div>
+                        <div id="second-header-text-appear-on-the-background-image-main-class">
+                            <p>Smart And <span id="sp-styling-class">Automated Model Refinement.</span></p>
+                        </div>
+                        <div class="animated-typing-test-on-background-image-main-class">
+                            <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                        </div>
+                        <div id="header-botom-last-buton--main-class-on-the-background-image">
+                            <button id="header-botom-last-buton-class-on-the-background-image">GET STARTED</button>
+                        </div>
+                    </div>
+                    <div class="text-appear-on-the-image-main-second-header-class" onclick="openFullscreen();">
+                        <video autoplay loop muted id="header-oddles-video" >
+                            <source src="robotics.mp4" id="header-oodles-source-class">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- --------------------------   HEADER-BOTTOM-BRAND-SLIDER-MAIN-CLASS  ------------------------------ -->
+
+
+    <!-- <div id="header-bottom-brand-logo-slider-main-class">
+        <div class="slider-header-bottom-heading-class">
+            <p>We are working with <span class="header-bottom-slider-span-class">leading brands</span></p>
+        </div>
+        <div class="slider-animation-scroller">
+            <div class="slideshow_wrapper">
+                <div class="slideshow_oodles">
+                    <div class="slide_one slide_oodles">
+                        <a href="https://www.microsoft.com/en-in"><img src="microsoft-oodles.png" height="32px" /></a>
+                    </div>
+
+                    <div class="slide_two slide_oodles">
+                        <a href="https://about.facebook.com/"><img src="meta-oodles.png" height="32px" /></a>
+                    </div>
+
+                    <div class="slide_three slide_oodles">
+                        <a href="https://www.headspace.com/"><img src="headspace-oodles.png" height="32px" /></a>
+                    </div>
+
+                    <div class="slide_four slide_oodles">
+                        <a href="https://www.dream11.com/"><img src="dream111-oodles.png" height="32px" /></a>
+                    </div>
+
+                    <div class="slide_three slide_oodles">
+                        <a href="https://sharechat.com/"><img src="sharechat-oodles.png" height="50px" /></a>
+                    </div>
+
+                    <div class="slide_one slide_oodles">
+                        <a href="https://www.microsoft.com/en-in"><img src="microsoft-oodles.png" height="32px" /></a>
+                    </div>
+
+                    <div class="slide_three slide_oodles">
+                        <a href="https://www.headspace.com/"><img src="headspace-oodles.png" height="32px" /></a>
+                    </div>
+
+                    <div class="slide_two slide_oodles">
+                        <a href="https://about.facebook.com/"><img src="meta-oodles.png" height="32px" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!-- --------------    SHIP RELA TIME RECOMENDATION -------------------- -->
+
+    <div id="oodles-recomendation-main-class">
+        <div class="ship-recomendation-heading-mian-class">
+            <h4 class="ship-recomendation-hedaing-styling-class"> Retraining made easy, simple and transparent</h4>
+        </div>
+        <div id="shipment-recomendation-main-flex-class">
+            <div class="shipment-recomendation-card-classes">
+                <img src="monitor.png" alt="layers-oodles" class="shimpent-cards-image-style-class">
+                <h4 class="shipment-image-bottom-heading-style-class"><b>Deep Integrated</b></h4>
+                <p class="shipment-heading-bottom-para-stl-class">We sure seamless integration with with your existing
+                    MLOPs pipeline through our consultancy + product offerings</p>
+            </div>
+
+            <div class="shipment-recomendation-card-classes">
+                <img src="layers.png" alt="layers-oodles" class="shimpent-cards-image-style-class">
+                <h4 class="shipment-image-bottom-heading-style-class"><b>Customization</b></h4>
+                <p class="shipment-heading-bottom-para-stl-class">Our framework can be easily customized to accommodate
+                    for any specific needs. If not, we are happy to built that customization</p>
+            </div>
+
+            <div class="shipment-recomendation-card-classes">
+                <img src="checkmark.png" alt="layers-oodles" class="shimpent-cards-image-style-class">
+                <h4 class="shipment-image-bottom-heading-style-class"><b>Simple and Intuitive</b></h4>
+                <p class="shipment-heading-bottom-para-stl-class">Our dashboard presents the model behaviour in an
+                    intuitive and simple to understand manner</p>
+            </div>
+
+            <div class="shipment-recomendation-card-classes">
+                <img src="restart.png" alt="layers-oodles" class="shimpent-cards-image-style-class">
+                <h4 class="shipment-image-bottom-heading-style-class"><b>Smart and Automated</b></h4>
+                <p class="shipment-heading-bottom-para-stl-class">Our smart and automated pipeline allows you to
+                    continuously improve your models while saving on both-time and money</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BLOG SECTIONN BLOG SECTION BLOG SECTION  BLOG SECTION -->
+
+    <!-- <div id="blog-section-main-class">
+        <p class="blog-page-header-class">From our blog</p>
+        <div id="blogs-cards-flex-class">
+
+                --------      FIRST BLOG BOX  ---------------- -->
+
+
+          <!--  <div class="cards-three-main-classes">
+                <a href="#">
+                    <div class="blog-cards-image-class">
+                        <img src="blog-1st-image.png" alt="oodles-blog" />
+                    </div>
+                    <div class="text-box-class">
+                        <h3>Real World Recommendation Sysytem | Part 1(Modeling)</h3>
+                    </div>
+                    <div class="blog-paragraph-main-class">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat laudantium fugit vel sed
+                            vero. Placeat amet nemo perspiciatis, nulla voluptates itaque, repellat at voluptatum
+                            adipisci
+                            quibusdam blanditiis fugiat quas!</p>
+                    </div>
+                </a>
+            </div>  ->
+
+            <!-- -----------------   SECOND BLOG BOX   ------------------- -->
+
+          <!--  <div class="cards-three-main-classes">
+                <a href="#">
+                    <div class="blog-cards-image-class">
+                        <img src="blog-table.png" alt="oodles-blog" />
+                    </div>
+                    <div class="text-box-class">
+                        <h3>Real World Recommendation Sysytem | Part 1(Modeling)</h3>
+                    </div>
+                    <div class="blog-paragraph-main-class">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat laudantium fugit vel sed
+                            vero. Placeat amet nemo perspiciatis, nulla voluptates itaque, repellat at voluptatum
+                            adipisci quibusdam blanditiis fugiat quas!</p>
+                    </div>
+                </a>
+            </div>  ----->
+            <!-- -------------------   THIRD BLOG BOX TABLE     --------------------- -->
+
+         <!----   <div class="cards-three-main-classes">
+
+                <a href="">
+                    <div class="blog-cards-image-class">
+                        <img src="blog-bar-graph.png" alt="oodles-blog" />
+                    </div>
+                    <div class="text-box-class">
+                        <h3>Real World Recommendation Sysytem | Part 1(Modeling)</h3>
+                    </div>
+                    <div class="blog-paragraph-main-class">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat laudantium fugit vel sed
+                            vero. Placeat amet nemo perspiciatis, nulla voluptates itaque, repellat at voluptatum
+                            adipisci
+                            quibusdam blanditiis fugiat quas!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ------------------------------------ TESTINOMIAL SECTION ---------------
+    <div class="testinomial-heading-class">
+        <p id="testinomial-heading">TESTIM<span class="testinomial-span-class">ONIALS</span></p>
+
+    </div>
+    <div class="textinomial-main-class">
+        <section id="testim" class="testim">
+
+            <div class="wrap">
+
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li>
+                    
+                          
+                    <li class="dot"></li>
+                  
+
+                    <li class="dot"></li>
+                    
+
+                    <li class="dot"></li>
+                    
+                    <li class="dot"></li>
+                </ul>
+                <div id="testim-content" class="cont">
+
+                    <div class="active">
+                        <div class="img"><img src="header-backgorund-image11.jpg"></div>
+                        <h2>Lorem P. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="gallary-oodles-1.jpg"></div>
+                        <h2>Mr. Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="header-backgorund-image.jpg"></div>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="dream111-oodles.png"></div>
+                        <h2>Lorem De Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="header-backgorund-image.jpg" alt=""></div>
+                        <h2>Ms. Lorem R. Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                </div>
+
+            </div>
+                    </div> 
+         </section>
+    </div>  -->
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        function progressBarScroll() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+                height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+                scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        }
+
+        window.onscroll = function () {
+            progressBarScroll();
+        };
+
+
+
+
+        function toggleMenu(id) {
+  console.log(id);
+  let nav = document.getElementById("main-nav");
+  if (id === 1) {
+    nav.style.left = "0%";
+  } else {
+    nav.style.left = "-100%";
+  }
+}
+
+
+
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
+
+        const textArray = ["High Performance Framework.", "Easy to use and Flexible. ", "Configure your own Dashboards.", "Start Your Journey With Us."];
+        const typingDelay = 150;
+        const erasingDelay = 40;
+        const newTextDelay = 2000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+            if (textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+
+
+
+
+
+        // video
+        var vid = document.getElementById("header-oddles-video");
+        function openFullscreen() {
+            if (vid.requestFullscreen) {
+                vid.requestFullscreen();
+            }
+        }
+    </script>
+
+
+
+    <script>
+        // vars
+        'use strict'
+        var testim = document.getElementById("testim"),
+            testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+            testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+            testimLeftArrow = document.getElementById("left-arrow"),
+            testimRightArrow = document.getElementById("right-arrow"),
+            testimSpeed = 4500,
+            currentSlide = 0,
+            currentActive = 0,
+            testimTimer,
+            touchStartPos,
+            touchEndPos,
+            touchPosDiff,
+            ignoreTouch = 30;
+        ;
+
+        window.onload = function () {
+
+            // Testim Script
+            function playSlide(slide) {
+                for (var k = 0; k < testimDots.length; k++) {
+                    testimContent[k].classList.remove("active");
+                    testimContent[k].classList.remove("inactive");
+                    testimDots[k].classList.remove("active");
+                }
+
+                if (slide < 0) {
+                    slide = currentSlide = testimContent.length - 1;
+                }
+
+                if (slide > testimContent.length - 1) {
+                    slide = currentSlide = 0;
+                }
+
+                if (currentActive != currentSlide) {
+                    testimContent[currentActive].classList.add("inactive");
+                }
+                testimContent[slide].classList.add("active");
+                testimDots[slide].classList.add("active");
+
+                currentActive = currentSlide;
+
+                clearTimeout(testimTimer);
+                testimTimer = setTimeout(function () {
+                    playSlide(currentSlide += 1);
+                }, testimSpeed)
+            }
+
+            testimLeftArrow.addEventListener("click", function () {
+                playSlide(currentSlide -= 1);
+            })
+
+            testimRightArrow.addEventListener("click", function () {
+                playSlide(currentSlide += 1);
+            })
+
+            for (var l = 0; l < testimDots.length; l++) {
+                testimDots[l].addEventListener("click", function () {
+                    playSlide(currentSlide = testimDots.indexOf(this));
+                })
+            }
+
+            playSlide(currentSlide);
+
+            // keyboard shortcuts
+            document.addEventListener("keyup", function (e) {
+                switch (e.keyCode) {
+                    case 37:
+                        testimLeftArrow.click();
+                        break;
+
+                    case 39:
+                        testimRightArrow.click();
+                        break;
+
+                    case 39:
+                        testimRightArrow.click();
+                        break;
+
+                    default:
+                        break;
+                }
+            })
+
+            testim.addEventListener("touchstart", function (e) {
+                touchStartPos = e.changedTouches[0].clientX;
+            })
+
+            testim.addEventListener("touchend", function (e) {
+                touchEndPos = e.changedTouches[0].clientX;
+
+                touchPosDiff = touchStartPos - touchEndPos;
+
+                console.log(touchPosDiff);
+                console.log(touchStartPos);
+                console.log(touchEndPos);
+
+
+                if (touchPosDiff > 0 + ignoreTouch) {
+                    testimLeftArrow.click();
+                } else if (touchPosDiff < 0 - ignoreTouch) {
+                    testimRightArrow.click();
+                } else {
+                    return;
+                }
+
+            })
+        }
+    </script>
+</body>
+
+</html>
