@@ -1407,61 +1407,74 @@ padding: 30px;
 }
 }
 
-/* -******************************BOXES AT THE BOTTOM************************** */
-#oodles-header-bottom-boxes-main-class {
-  margin: 0 auto;
-  /* border: 1px solid red; */
-  width: auto;
-  height: auto;
+
+/* footer footer footer footeer footer fpooter */
+#footer-main-class{
+  overflow: auto;
+  padding-top: 2em;
+}
+#join-beta-waitlist-header-main-cls{
+  overflow: Auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
-
-.cards-gallary-main-class {
+#join-beta-waitlist-header-main-cls h5{
+  font-size: 200%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+#join-beta-subscribe-button-main-cls{
   overflow: auto;
-  height: 50vh;
-  width: 40vh;
-  margin: 28px;
-
-  box-shadow: 1px 5px 20px 1px rgb(36, 36, 36);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: .3s;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
 }
+#Subscribe-bx-footr-odles{
+  padding-top: .9em;
+  padding-bottom: .9em;
+  padding-right: 5em;
+  padding-left: 1em;
+  width: 28vw;
+  outline: none;
+  border-radius: 0%;
 
-.cards-gallary-main-class:hover {
-  transform: scale(.96);
 }
+#subscribe-btn-footer-stl-cls{
+  padding: .9em 1em;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  left: -5px;
+  border: #000 solid ;
 
-#styling-class-gallary-1 {
+}
+.form-main-clss{
   overflow: auto;
-  background-image: url('gallary-oodles-1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
 }
-
-#styling-class-gallary-2 {
+#footer-brand-name-main-class{
   overflow: auto;
-  background-image: url('gallary-oodles-2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 7em;
 }
-
-#styling-class-gallary-3 {
-  overflow: auto;
-  background-image: url('gallary-oodles-3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+#footer-brand-name-main-class h5{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
 }
-
-#styling-class-gallary-4 {
+#footer-bottom-copyright-main-class{
   overflow: auto;
-  background-image: url('gallary-oodles-4.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 7em;
+}
+#footer-bottom-copyright-main-class h5{
+  font-size: .9em;
+}
+@media screen and (max-width:500px){
+  #Subscribe-bx-footr-odles{
+    width:100%;
+    padding-right: 0px;
+  } 
 }
