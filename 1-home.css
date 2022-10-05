@@ -1360,7 +1360,7 @@ padding: 30px;
 
 }
 .shipment-recomendation-card-classes:hover .shimpent-cards-image-style-class{
-  transition: .6s ease-in-out;
+  transition: .4s ease-in-out;
   transform: rotateY(360deg);
 }
 .shimpent-cards-image-style-class
