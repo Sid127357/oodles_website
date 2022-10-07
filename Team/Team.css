@@ -76,7 +76,7 @@
 }
 .team-image-main-class img
 {
-  height: 400px;
+  height: 450px;
   width: 100%;
 }
 .team-main-container .card-main-class .content-team-box-main-class {
@@ -162,6 +162,8 @@
 {
   overflow: auto;
   padding-top: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 #tem-bx-head-clss h4
 {
@@ -220,15 +222,15 @@
   font-size: 1.1em;
   color: #737373;
 }
-/* .SCD-TEAM-container{
+.SCD-TEAM-container{
   overflow: auto;
   display: flex;
   flex-direction: row-reverse;
-} */
+}
 #team-main-cards-flex-class{
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .mobile-nav,
