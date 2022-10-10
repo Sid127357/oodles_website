@@ -245,6 +245,105 @@ html {
 margin-left: 1em;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.wrapper-mn-cls .outer-card-main-class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  /* overflow: auto; */
+  font-family: "Poppins", sans-serif;
+
+}
+.wrapper-mn-cls .card-oodles-main-class{
+  width: auto;
+  padding: 20px;
+  margin-top: 20vw;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  border-radius: 10px;
+  /* border-radius: 100px 20px 20px 100px; */
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  animation: animate 15s linear infinite;
+  animation-delay: calc(3s * var(--delay));
+}
+.outer-card-main-class:hover .card-oodles-main-class{
+  animation-play-state: paused;
+}
+.wrapper-mn-cls .card-oodles-main-class:last-child{
+  animation-delay: calc(-3s * var(--delay));
+}
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%, 20%{
+    opacity: 0;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%, 40%{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%, 60%{
+    opacity: 0;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%, 100%{
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+#cards-content-flx-mn-cls{
+  overflow: auto;
+  display:flex;
+  justify-content: center;
+  padding: 1em;
+}
+.detection-and-arrow-mn-class{
+  overflow: auto;
+  display: flex;
+  padding-top: .3em;
+}
+.detection-para-mn-class{
+  overflow: auto;
+}
+.detection-para-mn-class p{
+  font-size: .8em;
+  color: #212121;
+}
+.detection-parallel-img-mn-cls{
+  overflow: auto;
+  /* padding-top: .1em; */
+  padding-left: .6em;
+}
+
+.detection-hr-main-text-class{
+  overflow: auto;
+  width: 400px;
+  padding-left: 2%;
+
+}
+.detection-hr-main-text-class p{
+  font-size: 1.5em;
+  color: #212121;
+}
+.detection-paralleer-paragraph-span-class{
+  color: rgb(14, 251, 172);
+}
+#scnd-card-mn-flx-class{
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+
 
 
 
@@ -269,7 +368,9 @@ margin-left: 1em;
 }
 
 .text-appear-on-the-image-main-second-header-class {
-padding: 30px;
+/* padding: 30px; */
+padding-left: 50vh;
+padding-top: 10vh;
 
 
 }
@@ -278,7 +379,8 @@ padding: 30px;
   overflow: auto;
   height: auto;
   margin-top: 66px;
- 
+ /* border: 1px solid red; */
+ width: 50%;
   
 }
 
