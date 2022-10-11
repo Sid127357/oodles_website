@@ -12,7 +12,7 @@
   --e-oodles-font-color: #FFFFFF;
   --e-oodles-background-color: #020202;
   --e-oodles-gray-color: #909090;
-  --e-oodles-font-family: Oswald;
+  /* --e-oodles-font-family: Oswald; */
 }
 
 
@@ -106,7 +106,8 @@ html {
   font-size: 1.2em;
 }
 .navigation-bar-items:hover .nav-link{
-  color: purple;
+  color: #ae00ff;
+
 }
 
 /* Dropdown Menu */
@@ -124,7 +125,8 @@ html {
 }
 .dropDown-item:hover,
 .dropDown-item:hover > .dropDown-link {
-  background-color: purple;
+  background-color: #ae00ff;
+
   color: white;
 }
 
@@ -460,6 +462,8 @@ padding-top: 10vh;
 .animated-typing-test-on-background-image-main-class p span.typed-text {
   font-weight: normal;
   color: var(--e-oodles-secondary-color);
+  font-family: "Poppins", sans-serif;
+
 }
 
 .animated-typing-test-on-background-image-main-class p span.cursor {
@@ -1347,6 +1351,8 @@ padding-top: 10vh;
   overflow: auto;
   font-family: Roboto, sans-serif;
   padding-bottom: 10em;
+  width: 90%;
+  margin: 0 auto;
 }
 .blog-page-header-class
 {
