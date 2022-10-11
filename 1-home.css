@@ -309,6 +309,7 @@ margin-left: 1em;
   .wrapper-mn-cls .card-oodles-main-class{
     left: 40px;
     width:80%;
+    /* border: 1px solid red; */
   }
   #cards-content-flx-mn-cls img
 {
@@ -578,13 +579,7 @@ padding-top: 10vh;
 
 }
 
-@media screen and (max-width:1250px){
-  #main-gllry-flex-class{
-    display: flex;
-    flex-direction: column-reverse;
-  }
- 
-}
+
 
 /* END OF THE NAVIGATIUON VAR  */
 
