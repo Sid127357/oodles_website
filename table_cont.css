@@ -8,6 +8,7 @@ html{
 #table-content-main-class{
     overflow: auto;
     padding: 2em;
+    /* border: 1px solid red; */
 }
 #table-content-card-main-class{
     overflow: auto;
@@ -187,4 +188,40 @@ html{
 }
 #second-table-main-class{
     padding-top: 4em;
+}
+@media screen and (max-width:500px){
+    #table-content-card-main-class{
+        width: 100%;
+    }
+    #mn-cls-btm-lst-mn-class ol{
+        padding-left: 1em;
+    }
+    #mn-cls-for-table-head-btm-para p{
+
+        padding-left: 1em;
+    }
+    #table-crd-text-btm-cls{
+        width: 100%;
+    }
+    #table-link-mn-class{
+        padding-left: 1em;
+    }
+    #table-ml-main-img-class{
+        width: 95%;
+        margin: 0;
+    }
+    #table-image-bottom-paragraph-main-class{
+        width: 100%;
+    }
+    #steps-main-class-table{
+        width:100%;
+    }
+    #step-main-second-para-cls{
+        width: 100%;
+    }
+    #step-main-class-list-class{
+        width:100%;
+        padding: 1em;
+    }
+
 }
