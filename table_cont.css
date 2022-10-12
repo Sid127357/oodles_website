@@ -13,7 +13,6 @@ html{
 #table-content-card-main-class{
     overflow: auto;
     margin: 0 auto;
-    /* border: 1px solid red; */
     height: auto;
     width: 50%;
     border-radius: 10px;
@@ -24,7 +23,6 @@ html{
 #tbl-list-img-head-mn-cls{
     overflow: auto;
     display: flex;
-    /* border: 1px solid red; */
     align-items: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 1.5em;
@@ -32,7 +30,6 @@ html{
 }
 .table-img-head-clss{
     overflow: auto;
-    /* border: 1px solid red; */
     width: 30px;
 }
 .table-img-head-clss img{
@@ -106,7 +103,7 @@ html{
 }
 #table-crd-text-btm-cls{
     overflow: auto;
-    width: 53%;
+    width: 80%;
     padding-top: 3em;
 
 }
@@ -117,7 +114,10 @@ html{
 }
 #table-link-mn-class{
     overflow: auto;
-    padding-left: 21em;
+    /* padding-left: 13em; */
+    display: flex;
+    align-items: center; 
+   flex-direction: column;
 
 }
 #what-an-model-main-heading-mn-class{
@@ -144,9 +144,8 @@ html{
     padding-top:3em;
 }
 #table-image-bottom-paragraph-main-class{
-    width: 70%;
+    width: 80%;
     padding-top: 2em;
-    /* border: 1px solid red; */
 }
 #table-image-bottom-paragraph-main-class p{
     font-size: 1.4em;
@@ -155,7 +154,7 @@ html{
 }
 #steps-main-class-table{
     overflow: auto;
-    width: 70%;
+    width: 80%;
     padding-top: 3em;
 }
 #steps-main-class-table p{
@@ -178,7 +177,7 @@ html{
 #step-main-second-para-cls{
     overflow: auto;
     padding-top: 2em;
-    width: 75%;
+    width: 80%;
 }
 #step-main-second-para-cls p
 {
