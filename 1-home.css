@@ -319,7 +319,7 @@ margin-left: 1em;
   width: 100%;
 }
 .text-appear-on-the-image-main-header-class{
-  margin-top: 200px !important;
+  margin-top: 350px !important;
   width: 100% !important;
   /* border: 1px solid red; */
 }
@@ -403,7 +403,8 @@ margin-left: 1em;
 /* padding-left: 50vh; */
 padding-top: 10vh;
 /* border: 1px solid red; */
-/* overflow: auto; */
+overflow: auto;
+/* padding-bottom: 100em; */
 
 }
 
