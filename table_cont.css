@@ -1,3 +1,4 @@
+@import url('./1-home.css');
 html{
     scroll-behavior: smooth;
 }
@@ -114,7 +115,7 @@ html{
 }
 #table-link-mn-class{
     overflow: auto;
-    /* padding-left: 13em; */
+    padding-bottom: 5em;
     display: flex;
     align-items: center; 
    flex-direction: column;
@@ -223,4 +224,7 @@ html{
         padding: 1em;
     }
 
+}
+#footer-main-class{
+    padding-top: 5em;
 }
