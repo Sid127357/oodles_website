@@ -1419,9 +1419,10 @@ overflow: auto;
   margin-left: 5%;
   margin-right: 5%;
 }
-.text-box-class h3:hover
+.cards-three-main-classes:hover .text-box-class h3
 {
-  color: #ea830e;
+  color: #ae00ff;
+
 }
 .blog-paragraph-main-class
 {
