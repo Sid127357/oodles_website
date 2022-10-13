@@ -1,4 +1,4 @@
-@import url('./1-home.css');
+@import url('../1-home.css');
 html{
     scroll-behavior: smooth;
 }
