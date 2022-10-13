@@ -6,13 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table : 1</title>
-    <link rel="stylesheet" href="table_cont.css">
+    <link rel="stylesheet" href="blogTable.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 </head>
 
 <body>
+    <div class="container">
+        <nav class="navigation-bar">
+            <div class="main-class-navigation-flx-clss">
+                <div id="oodles-brand-logo-header-main-cls">
+                    <img src="../oodles_brand_logo.png" alt="ooodles/brand/logo" width="30%">
+                </div>
+                <div class="container-nav-items-main">
+                    <div class="mobile-nav">
+                        <button class="mobile-btn" onclick="toggleMenu(1)">Menu</button>
+                    </div>
+                    <ul class="nav" id="main-nav">
+                        <li class="close-item">
+                            <button class="mobile-btn" onclick="toggleMenu(0)">Close &times;</button>
+                        </li>
+                        <li class="navigation-bar-items">
+                            <a href="#!" class="nav-link-items">Home</a>
+                        </li>
+                        <!-- <li class="navigation-bar-items">
+                    <a href="#!" class="nav-link">
+                      Courses <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropDown-menu level-1">
+                      <li class="dropDown-item">
+                        <a href="#!" class="dropDown-link">
+                          Physics
+                        </a>
+                        
+                      </li>
+                      <li class="dropDown-item">
+                        <a href="#!" class="dropDown-link">
+                          Chemistry 
+                        </a>
+                        
+                      </li>
+                      <li class="dropDown-item">
+                        <a href="#!" class="dropDown-link">Maths</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                        <li class="navigation-bar-items">
+                            <a href="../Team/Team.html" class="nav-link-items">Team</a>
+                        </li>
+                        <li class="navigation-bar-items">
+                            <a href="#!" class="nav-link-items">Blog</a>
+                        </li>
+                        <!-- <li class="navigation-bar-items">
+                    <a href="#!" class="nav-link">Contact</a>
+                  </li> -->
+                        <div id="get-started-button-main-class">
+                            <a href="#" class="btn-get-start black">Get Started</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
     <div id="table-content-main-class">
         <div id="table-content-card-main-class">
             <div id="tbl-list-img-head-mn-cls">
@@ -73,35 +136,46 @@
                 </p>
             </div>
             <div id="steps-main-class-table">
-                <p id="What_is_an_ML_model"><b>Step 1: </b>We begin with the most basic and essential task of understanding the problem we need to solve or the task we need to perform. We then continue by gaining the data and understanding the kind of outputs we need from our model. Herein we collect answers to the questions like:</p>
-               
+                <p id="What_is_an_ML_model"><b>Step 1: </b>We begin with the most basic and essential task of
+                    understanding the problem we need to solve or the task we need to perform. We then continue by
+                    gaining the data and understanding the kind of outputs we need from our model. Herein we collect
+                    answers to the questions like:</p>
+
             </div>
             <div id="step-main-class-list-class">
-            <ul type="disc">
-                <li>What is our main aim?</li>
-                <li>What input data do we need and is it available?</li>
-                <li>What is the real world scenario where the model will be used?</li>
-            </ul>
+                <ul type="disc">
+                    <li>What is our main aim?</li>
+                    <li>What input data do we need and is it available?</li>
+                    <li>What is the real world scenario where the model will be used?</li>
+                </ul>
             </div>
             <div id="step-main-second-para-cls">
-                <p>We must also understand that the model will be trained on the data which is already given to it and make predictions accordingly. However, in the daily scenario, the data is subject to change and our model should adapt to it frequently to stay up to date.</p>
+                <p>We must also understand that the model will be trained on the data which is already given to it and
+                    make predictions accordingly. However, in the daily scenario, the data is subject to change and our
+                    model should adapt to it frequently to stay up to date.</p>
             </div>
 
             <!-- SECOND-TABLE-MAIN-CLAASS -->
 
-           
+
             <div id="steps-main-class-table">
-                <p id="second-step"><b>Step 2: </b>Now that we know what has to be done and what data we need, we begin with the real task of acquiring and preparing that data. It is crucial to collect good-quality data because it plays a key role in deciding how accurate and reliable our model will be. </p>
-                <p>The collected data needs to go through a process called data cleaning to filter out the bad apples. While it may sound like a tedious task, it is a very important step to ensure the accuracy of the model. Data cleaning involves several steps:</p>
-               
+                <p id="second-step"><b>Step 2: </b>Now that we know what has to be done and what data we need, we begin
+                    with the real task of acquiring and preparing that data. It is crucial to collect good-quality data
+                    because it plays a key role in deciding how accurate and reliable our model will be. </p>
+                <p>The collected data needs to go through a process called data cleaning to filter out the bad apples.
+                    While it may sound like a tedious task, it is a very important step to ensure the accuracy of the
+                    model. Data cleaning involves several steps:</p>
+
             </div>
             <div id="step-main-class-list-class">
-            <ul type="disc">
-                <li>Removing unwanted, duplicate, or redundant data fields that are of no use to the model.</li>
-                <li>Fixing structural errors that may happen during transferring data or while taking measurements or inputs.</li>
-                <li>Removing unwanted outliers as they may factor the accuracy of our models in certain cases.</li>
-                <li>Handling the empty fields or the missing values in the dataset. We either drop them or add some value based on past experiences.</li>
-            </ul>
+                <ul type="disc">
+                    <li>Removing unwanted, duplicate, or redundant data fields that are of no use to the model.</li>
+                    <li>Fixing structural errors that may happen during transferring data or while taking measurements
+                        or inputs.</li>
+                    <li>Removing unwanted outliers as they may factor the accuracy of our models in certain cases.</li>
+                    <li>Handling the empty fields or the missing values in the dataset. We either drop them or add some
+                        value based on past experiences.</li>
+                </ul>
             </div>
             <div id="table-ml-main-img-class">
                 <img src="../step2-table.png" alt="">
@@ -109,24 +183,36 @@
 
             <!-- THIRD TABLE MAIN CLASS THRID MAIN CLASS THIRD MAIN CLASS -->
             <div id="steps-main-class-table">
-                <p id="third-main-class"><b>Step 3: </b> Now, based on our requirements, we decide which model best fits our needs. The model choice depends on the data that will be processed such as numerical data, image data, audio data, and so on. We choose from a variety of algorithms such as clustering, regression, classification, or prediction.</p>
-               
+                <p id="third-main-class"><b>Step 3: </b> Now, based on our requirements, we decide which model best fits
+                    our needs. The model choice depends on the data that will be processed such as numerical data, image
+                    data, audio data, and so on. We choose from a variety of algorithms such as clustering, regression,
+                    classification, or prediction.</p>
+
             </div>
 
             <!-- FORTH TABL3 MAIN CLASS FORTH MAIN CKLASS FORTH MAIN CLASS -->
 
             <div id="steps-main-class-table">
-                <p id="forth-main-class"><b>Step 4: </b>Now that we have everything we need, we will now train our model using the data we gathered. We will repeatedly train and test our model so that we can achieve greater levels of precision. The data is split into training and testing sets and is used to validate the model. </p>
-                <p>One tries to achieve higher levels of accuracy and precision in this step. If in case, the desired results are not being obtained, then there might be a problem of overfitting or underfitting in the model. In this case, the model is re-trained and modified until such desired levels of accuracy are obtained.</p>
-               
+                <p id="forth-main-class"><b>Step 4: </b>Now that we have everything we need, we will now train our model
+                    using the data we gathered. We will repeatedly train and test our model so that we can achieve
+                    greater levels of precision. The data is split into training and testing sets and is used to
+                    validate the model. </p>
+                <p>One tries to achieve higher levels of accuracy and precision in this step. If in case, the desired
+                    results are not being obtained, then there might be a problem of overfitting or underfitting in the
+                    model. In this case, the model is re-trained and modified until such desired levels of accuracy are
+                    obtained.</p>
+
             </div>
 
             <!-- FIFTH TABL3 MAIN CLASS FIFTH MAIN CKLASS FIFTH MAIN CLASS -->
 
             <div id="steps-main-class-table">
-                <p id="fifth-main-class"><b>Step 5: </b>And this is the final step, the model is ready to be used in the real world to make predictions!  </p>
-                <p>Now that our model is out in the real world, dealing with live data and making predictions on the go, you may start to observe some wrong results or poor predictions. Want to know the reasons behind it? Stick with us till our next blog to understand this better :)</p>
-               
+                <p id="fifth-main-class"><b>Step 5: </b>And this is the final step, the model is ready to be used in the
+                    real world to make predictions! </p>
+                <p>Now that our model is out in the real world, dealing with live data and making predictions on the go,
+                    you may start to observe some wrong results or poor predictions. Want to know the reasons behind it?
+                    Stick with us till our next blog to understand this better :)</p>
+
             </div>
             <div id="table-ml-main-img-class">
                 <img src="../blog_3img.png" alt="">

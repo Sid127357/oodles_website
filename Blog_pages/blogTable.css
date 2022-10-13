@@ -6,6 +6,7 @@ html{
     margin:0;
     padding: 0;
 }
+
 #table-content-main-class{
     overflow: auto;
     padding: 2em;
