@@ -18,7 +18,7 @@
 
 body {
   background-color: var(--e-oodles-font-color);
-  user-select: none;
+
 }
 
 html {
@@ -1373,8 +1373,8 @@ overflow: auto;
 {
   overflow: auto;
   cursor: pointer;
-  width: auto;
-  height: auto;
+  width: 400px;
+  height: 600px;
   transition: all .3s;
   border-radius: 3%;
   margin: 1%;

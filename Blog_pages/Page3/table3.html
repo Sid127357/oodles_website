@@ -78,7 +78,7 @@
 
     <div id="table-content-main-class">
         <div id="blog-table-second-container-mn-class">
-            <h5>Why do we need to care about Retraining?</h5>
+            <h5>Bias in Recommender Systems</h5>
         </div>
         <div id="table-content-card-main-class">
 
@@ -93,86 +93,100 @@
             </div>
             <div id="mn-cls-for-table-head-btm-para">
                 <a href="#Intro"><li>- Introduction  </li></a>
-                <a href="#model1"><li>- What is Model Retraining?</li></a>
-                <a href="#sixreason"><li>- 6 Reasons Why ▶ Retraining is Important</li></a>
+                <a href="#model1"><li>- User Interaction Adds Bias</li></a>
             </div>
             <div id="mn-cls-btm-lst-mn-class">
                 <ol>
                     <a href="#fststep">
-                        <li>Data Drift</li>
+                        <li>Selection Bias</li>
                     </a>
                     <a href="#second-step">
-                        <li> Concept Drift</li>
+                        <li> Exposure Bias</li>
                     </a>
                     <a href="#third-main-class">
-                        <li>Label Shift</li>
+                        <li>Conformity Bias</li>
                     </a>
                     <a href="#forth-main-class">
-                        <li>Edge Cases</li>
+                        <li>Position Bias</li>
                     </a>
-                    <a href="#fifth-main-class">
-                        <li>Enabling new use cases</li>
-                    </a>
-                    <a href="#sixth-main-class">
-                        <li>Feature change</li>
-                    </a>
+                    
                 </ol>
                 
             </div>
-            <div id="mn-cls-for-table-head-btm-para">
-                <li>- Conculsion</li>
-
+            <div id="mn-cls-for-table-head-btm-para" class="second-table-content-mn-class">
+                <a href="#biase-data-2"><li>- Biases Present in Data </li></a>
+                <a href="#how-to-solve"><li>- How to solve it?</li></a>
             </div>
+            <div id="mn-cls-btm-lst-mn-class">
+                <ol>
+                    <a href="#biasfst">
+                        <li>Propensity Score</li>
+                    </a>
+                    <a href="#biasscnd">
+                        <li>Data Imputation</li>
+                    </a>
+                    <a href="#biasthrd">
+                        <li>Modeling Popularity Influence</li>
+                    </a>
+                    <a href="#biasfrth">
+                        <li>Sampling</li>
+                    </a>
+                    <a href="#biasffth">
+                        <li>Click Models</li>
+                    </a>
+                    <a href="#biasxth">
+                        <li>Regularization</li>
+                    </a>
+                    <a href="#biassvth">
+                        <li>Rebalancing</li>
+                    </a>
+                    <a href="#biaseth">
+                        <li>Adversarial Learning</li>
+                    </a>
+                    <a href="#biasnnth">
+                        <li>Reinforcement Learning</li>
+                    </a>
+                   
+                    
+                </ol>
         </div>
+        <div id="mn-cls-for-table-head-btm-para" class="second-table-content-mn-class">
+            <a href="#conclusion"><li>- Conclusion</li></a>
 
+        </div>
+        </div>
         <div id="table-crd-btm-man-application-cls">
             <div id="table-crd-text-btm-cls">
-                <p>In our previous blog, we introduced you to the wonderful universe of ML and dug deep into the various steps involved in building and deploying the model. But there is one very integral step that one needs to take to ensure the longevity and relevance of the model and that is Model Retraining, which is a crucial aspect in the life cycle of a model. </p>
+                <p id="Intro">Modern-day web systems rely on user feedback (such as click activity or ratings) to build ML models to personalize recommendations. Such recommender systems form the core of several popular applications that recommend short videos (Instagram, TikTok, YouTube), timeline feeds (Twitter, Facebook), the next product to buy (Amazon, Ebay), etc.  </p>
 
 
-                <p id="Intro">Let’s understand this better with an example. IMDb is one of the world’s largest movie databases and is a go-to website for many of us for movie recommendations (What would we do without it, right? XD). Let’s say for better user experience, IMDb wants to build a machine learning model which predicts box office outcome of a movie before its release based on inputs such as date of release, genre, star cast, production house, director, theme, editing and effects used, content rating (age group rating), music composer, region and budget and it will help predict whether the movie will be a box office hit or not. To do this, the model is first trained on the movie data of three years, say 2015 - 2018 and then it was deployed, and voila! It gave tremendously accurate results and everyone lived happily ever after. Or at least that’s what we all would like to believe, right?  </p>
             </div>
         </div>
         <div id="table-link-mn-class">
            
-            <div id="table-ml-main-img-class">
-                <img src="./img1.png" alt="">
-            </div>
             <div id="table-image-bottom-paragraph-main-class">
-                <p>However, the success of the model is short lived-  It was noticed that around late 2020, a data shift occurs as audience preferences change, which results in the degradation of the model. The precision and accuracy rate of the model deteriorates and an overall downfall in the performance of the model is observed. But why did this happen in the first place? Well, the reason is that the data we used to train our model is now outdated. 
-                </p>
-                <p>So, what next? Cue, model retraining
-                </p>
-            </div>
-            <div id="table-image-bottom-paragraph-main-class">
-                <p id="model1"><b>But First, Let Me #EXPLAIN What is Model Retraining?</b></p>
+                <p id="model1"><b>User Interaction Adds Bias</b></p>
                 <p>Model retraining is the process of updating the data of any deployed model. The updated data is used to retrain the model and keep the model up to date. It ensures the accuracy rate and precision rate of the model are not compromised, and quality service is ensured. However, model retraining doesn't change the model's algorithm; it simply means updating the model's dataset to get accurate results even after a long time.
                 </p>
             </div>
 
-            <div id="table-image-bottom-paragraph-main-class">
-                <p id="sixreason"><b>6 Reasons Why ▶ Retraining is Important</b></p>
-                <p>The decay in model performance is generally due to reasons like data drifts, label drifts, and concept drifts. To accommodate these changes, retraining is essential. Other reasons include the occurrence of unlikely scenarios, the addition of data, or an increase in the output labels. Let’s talk about all of these one by one:
-                </p>
-            </div>
             <div id="steps-main-class-table">
-                <p id="fststep"><b>1. Data Drift:</b> In simple words, a data shift is a change in the dataset,overtime, that is initially used to train the model. This change in dataset values leads to inaccurate predictions of the model. The initial data used to train the data is called source distribution, and the data that the model actually works on is the target distribution.
-                    Coming back to our previous IMDb example, the model was trained using data collected in the years 2015 - 2018 and it is inevitable that trends and preferences would have changed significantly since then, which would lead to a data shift. Hence, it becomes crucial to collect fresh data and update our model accordingly.
+                <p id="fststep"><b>1. Selection bias:</b> It arises due to the user’s self-selection behavior. For example, a user might rate a movie they like but rarely rate a movie they dislike. Training on such a dataset is challenging since high ratings account for the majority of observed ratings. These ratings are not a representative sample of all ratings; that is, the rating data is often missing not at random, thus incorporating a selection bias. The following figure from a rating survey highlights this issue, where users tend to only rate items that they like.
                     </p>
 
             </div>
-
+            <div id="table-ml-main-img-class">
+                <img src="./img1.png" alt="">
+            </div>
 
             <div id="steps-main-class-table">
-                <p id="second-step"><b>2. Concept Drift:</b>  Concept drift refers to a phenomenon where the relationship between the inputs and outputs change over time. In the context of our example, say the audience's tastes evolve over time. Previously having a big actor was enough to guarantee the success of a movie (and since this was a clear pattern in the training data, this is also what our model learnt). But now, people are giving more preference to storyline as compared to actors and as a result, movies with just popular artists but weak storylines are now getting flopped. This necessitates a need to retrain the model as the underlying relationship between the input features and resultant output has changed and the model must be retrained to the new reality. 
+                <p id="second-step"><b>2. Exposure bias: </b>  The user is likely to watch a recommended video, even if it is not the best fit. This action is then taken as positive feedback by the system to recommend similar videos further, resulting in exposure bias in the data. 
                     </p>
 
             </div>
-
-
-
+            
             <div id="steps-main-class-table">
-                <p id="third-main-class"><b>3. Label Shift:</b> Label shift occurs when the output distribution changes while the input distribution and their relationship remains the same. These scenarios typically happen when the underlying data undergoes a systematic shift. Let’s understand this with our movie example. All of us have seen the meteoric rise of OTT platforms in recent years. This rise has resulted in a negative impact on box office collections as people are now okay to wait for the OTT release as compared to spending on movie tickets. What it means is that the box office collections have reduced across the board. While there might not be any change in which movies are becoming a hit, the hit movies may be earning lower collections as compared to earlier. Thus, the model needs to be retrained to learn the new output distribution.
+                <p id="third-main-class"><b>3. Conformity bias:</b> A user may be influenced by public opinions and might not select their true preferences. This results in conformity bias.
                     </p>
 
             </div>
@@ -180,37 +194,108 @@
 
 
             <div id="steps-main-class-table">
-                <p id="forth-main-class"><b>4. Edge Cases:</b> Edge cases are the occurrence of rare yet possible scenarios. Talking in quantitative terms, if there are events with a 99% possibility, then an edge case is the occurrence of an event with that rare 1% possibility. 
-                    Let's talk about our example. In this case, let's say we have an actor who only works with big production houses, but in a particular case, the script of the movie attracts him, and he ends up working with a small local production house. Now, this is an edge case for our model. Another instance of an edge case is where a less famous actor has a big break and ends up working in a high-budget film with a very famous director and producer, contrary to his previous low-budget movie castings. 
-                    While we collect the dataset and are provisioning our model, we might not consider these cases, but if such a case happens, we need to collect such data intently and retrain our model to include these cases as well. 
-                    
-                    </p>
-
-            </div>
-            <div id="steps-main-class-table">
-                <p id="fifth-main-class"><b>5. Enabling new use cases:</b> Retraining is triggered in these situations where a new class has been added to the output. For instance, previously movies were being classified amongst these three categories: Flop, Average and Hit. However, a new category needs to be added called Blockbuster Hit. So, naturally the model needs to be retrained to incorporate this new class. 
-                    
-                    </p>
-
-            </div>
-
-            <div id="steps-main-class-table">
-                <p id="sixth-main-class"><b>6. Feature change:</b> The factors in deciding a certain outcome keeps changing with time. Let's say with all the input data earlier described, we notice that supporting cast plays a key role in determining success of a movie and want to add that also as an input feature. This requires us to retrain the model with the new set of input features. Adding the data in the dataset will be easy, but then model retraining becomes a crucial step. 
+                <p id="forth-main-class"><b>4. Position bias:</b> The user will likely watch one of the top 5 videos in response to a YouTube search. The bias arising due to the display position of the item is referred to as Position bias.
                     
                     </p>
 
             </div>
             
+            <div id="table-image-bottom-paragraph-main-class">
+                <p id="biase-data-2"><b>User Interaction Adds Bias</b></p>
+                <p>The above biases are due to user behaviors, but there are biases present in the training data itself, such as the <b>popularity bias</b>, where some items are more popular than others and hence generate more feedback from users, eventually making recommendations biased towards them. 
+                    <br><br>
+                    Another bias generally seen in training data is <b>Unfairness</b>, which is due to the recommender system unfairly discriminating against certain groups of individuals, such as on the basis of gender, race, age, wealth, education level, etc. For example, in the context of job recommendation, it has been found that women see fewer advertisements about high-paying jobs due to gender imbalance in training data. 
+                    <br><br>
+                    Finally, due to the <b>Feedback Loop</b> in recommender systems, these biases only intensify over time, resulting in a “the rich get richer” effect. This is because a bias in data results in a bias in recommendations, which in turn impacts the exposure and selection of users, causing further biases in the data.
+                </p>
+            </div>
+            <div id="table-ml-main-img-class">
+                <img src="./img2.png" alt="">
+            </div>
+            <div id="steps-main-class-table">
+                <p> (Title) An illustration of how popularity bias can exacerbate through feedback</p>
+
+            </div>
+            <div id="steps-main-class-table">
+                <p>
+                    Feedback loops are detected by measuring the diversity of popularity of items in the system. The popularity of all items generally follows a long-tail distribution, where most of the items are not interacted with at all. In general, the more diversity of outputs of the recommender systems (aka the long-tail distribution has a greater entropy), the less the system suffers from degenerate feedback loops. On the other hand, low scores imply a homogeneous system that suffers from popularity bias. 
+                    </p>
+
+            </div>
+
+            <div id="table-image-bottom-paragraph-main-class">
+                <p id="how-to-solve"><b>How to solve it?</b></p>
+                <p>Due to the above biases, the data observed by a recommendation system used to personalize users’ preferences might deviate from reflecting users’ true preferences. 
+                    The ubiquity of such systems in modern web companies has resulted in a growing interest in ameliorating bias in recommender systems. The following methods have gained significant interest due to their effectiveness in reducing bias.
+                    
+                </p>
+            </div>
+
+            <div id="steps-main-class-table">
+                <p id="biasfst"><b>1. Propensity Score:</b> Propensity scores can be calculated and fed back into the training loop to reduce bias due to the user's observation of items. The propensity score models the probability of exposure to a specific item. These probabilities are then later used to reweigh the interactions while retraining. For example, if the probability of exposure to an item is high, it can be downweighed during training to reduce the effects of its exposure on the user. 
+                    </p>
+
+            </div>
+       
+            <div id="steps-main-class-table">
+                <p id="biasscnd"><b>2. Data Imputation:</b> Selection bias happens due to missing data (e.g., users prefer to give high ratings than low ratings). Data imputation can be used to solve for selection bias by imputing the missing entries with pseudo-labels.
+                    </p>
+
+            </div>
+
+            <div id="steps-main-class-table">
+                <p id="biasthrd"><b>3. Modeling Popularity Influence: </b>Conformity bias occurs when users are influenced by popular opinion. One way to reduce its effect is to disentangle the effect caused by conformity by leveraging the average popularity of the item and offsetting it from the.
+                    </p>
+
+            </div>
+
+            <div id="steps-main-class-table">
+                <p id="biasfrth"><b>4. Sampling:</b> Apart from propensity-score based weighing, sampling of items while retraining can be used to address exposure bias. The sampling determines which items to choose, and its distribution can be used as item confidence weights. Thus, it can limit the effect due to exposure by choosing an appropriate sampling distribution.
+                    </p>
+
+            </div>
+
+            <div id="steps-main-class-table">
+                <p id="biasffth"><b>5. Click Models: </b> Position bias, where the item is more likely to be interacted with due to its display position, can be mitigated using click models. The idea is to model the 
+                    </p>
+
+            </div>
+
+            <div id="steps-main-class-table">
+                <p id="biassxth"><b>6. Regularization:</b> Regularization can be used to mitigate popularity bias and unfairness in recommender systems. It has been shown that introducing suitable regularization terms can result in more balanced recommendation results.
+                    </p>
+
+            </div>
+
+            <div id="steps-main-class-table">
+                <p id="biassvth"><b>7. Rebalancing:</b> A simple method to tackle unfairness is to rebalance the training dataset with specific fairness objectives like gender parity. This can be done using re-labeling the positive labels in favor of the minority class or resampling the training data to balance the size of both classes.
+                    </p>
+
+            </div>
+
+            <div id="steps-main-class-table">
+                <p id="biaseth"><b>8. Adversarial Learning:</b> Apart from regularization, adversarial learning can be employed to ameliorate popularity bias and unfairness. The basic idea is to introduce an adversary whose aim is to confuse the recommender by giving a signal to recommend more niche items. Eventually, the adversary learns the implicit association between popular and niche items while the recommender captures niche items that correlate with the user’s history, resulting in more long-tail item recommendations. 
+                    </p>
+
+            </div>
+            <div id="steps-main-class-table">
+                <p id="biasnnth"><b>9. Reinforcement Learning:</b> Finally, reinforcement learning can counter the loop amplification effect of biases by deploying a more intelligent strategy to balance exploitation and exploration adaptively. However, such methods require the policy to be deployed online to be evaluated.
+                    </p>
+
+            </div>
+
             <div id="table-ml-main-img-class">
                 <img src="./img3.png" alt="">
             </div>
-
-            <!-- THIRD TABLE MAIN CLASS THRID MAIN CLASS THIRD MAIN CLASS -->
-            <div id="steps-main-class-table">
-                <p id="third-main-class"> The above drifts are some of the most common issues encountered by ML practitioners and we at Oodles.ai are building a smart and automated pipeline to continuously monitor these issues and solve them by retraining models so that they can meaningfully impact your business metrics. Sign up for our beta access to stay tuned!</p>
-
+       
+            <div id="table-crd-btm-man-application-cls">
+                <div id="table-crd-text-btm-cls">
+                    <p id="conclusion">We at Oodles AI are passionate about solving this problem statement for our users so that they can go another day without worrying about the efficacy of their models. So if you are a ML Practitioner, Data Scientist or Product Lead, we would love to hear from you. So, do reach out to us at <a href="#">hello@oodles.ai</a> and sign up for the beta access to stay in the loop   </p>
+    
+    
+                </div>
             </div>
-
+        </div>
          
     <hr>
     <!-- FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOTTER FOTEER FOTTER FOTTER FOOTER FOOTER -->
