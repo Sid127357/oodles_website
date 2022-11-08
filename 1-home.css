@@ -237,7 +237,8 @@ html {
   text-transform: uppercase;
   position: relative;
   text-decoration: none;
-  display: flex;
+  /* display: flex; */
+  display: inline-block;
   align-items: center;
   justify-content: center;
   border-bottom: 1.5px solid black;
